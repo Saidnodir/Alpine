@@ -1,0 +1,570 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.container {
+  padding: 50px;
+  background: linear-gradient(114.19deg, #3DE78B 0%, #1EE0BD 100%);
+}
+
+.container .box {
+  height: 850px;
+  width: 1400px;
+  background-image: url(../img/Rectangle.png);
+  padding: 50px;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.container .box .navph {
+  display: none;
+}
+
+.container .box .navph .social-2 {
+  display: none;
+}
+
+.container .box nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .box nav img {
+  margin-right: 5px;
+  width: 28px;
+  height: 38px;
+}
+
+.container .box nav p {
+  margin-top: 5px;
+  width: 101px;
+  height: 24px;
+  left: 110px;
+  top: 77px;
+  font-family: Philosopher;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+
+.container .box nav ul {
+  border-radius: 10px;
+  padding: 15px 45px;
+  background-color: rgba(255, 255, 255, 0.26);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .box nav ul li {
+  margin-right: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .box nav ul li img {
+  margin-top: 5px;
+  width: 16px;
+  height: 9px;
+}
+
+.container .box nav ul li div {
+  width: 160px;
+  height: 28px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.container .box nav ul li div button img {
+  margin-left: 2px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8efeff1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.699);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.699);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #FFFFFF;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main .social {
+  margin-bottom: 50px;
+  position: absolute;
+  top: 710px;
+}
+
+main .social a img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+main .social a :nth-child(1) {
+  width: 20px;
+  height: 30px;
+}
+
+main .social a :nth-child(2) {
+  width: 30px;
+  height: 30px;
+}
+
+main .social a :nth-child(3) {
+  width: 26px;
+  height: 21px;
+}
+
+main .social a :nth-child(4) {
+  width: 25px;
+  height: 17px;
+}
+
+main .form-box {
+  position: absolute;
+  left: 270px;
+  top: 250px;
+}
+
+main .form-box form input {
+  width: 539px;
+  height: 70px;
+  left: 334px;
+  top: 292px;
+  padding: 20px;
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../img/search.png);
+  background-color: rgba(253, 253, 253, 0);
+  background-repeat: no-repeat;
+  background-position: 30px;
+  border-radius: 50px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .form-box form input:focus {
+  background: none;
+  border: 2px solid #0cd4e2;
+}
+
+main .form-box form p {
+  margin-top: 50px;
+  width: 600px;
+  height: 100px;
+  left: 334px;
+  top: 412px;
+  font-family: Lemon;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 94px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+main .form-box form button {
+  width: 375px;
+  height: 70px;
+  left: 334px;
+  top: 615px;
+  margin-top: 100px;
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  background-color: rgba(253, 253, 253, 0);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+main .form-box h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  width: px;
+  height: 38px;
+  left: 346px;
+  top: 789px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+main .form-box h1 p {
+  width: 400px;
+  height: 90px;
+  left: 518px;
+  top: 1058px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+main .social-2 {
+  display: none;
+}
+
+main .vide-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  position: absolute;
+  left: 750px;
+  top: 450px;
+}
+
+main .vide-box div h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 290px;
+  height: 21px;
+  margin-top: 35px;
+  margin-left: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+main .vide-box div p {
+  margin-top: 33px;
+  width: 317px;
+  height: 120px;
+  left: 1522px;
+  top: 742px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+main .vide-box img {
+  margin-left: 100px;
+}
+
+@media (max-width: 400px) {
+  body {
+    min-width: 400px;
+    max-width: 400px;
+  }
+  .container {
+    padding: 0;
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+  }
+  .container .box {
+    margin: 0;
+    padding: 15px;
+    width: 400px;
+    height: 550px;
+    background-image: url(../img/bg2.jpg);
+    background-size: 400px 600px;
+    border-radius: 0px;
+  }
+  .container .box main .social-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .box .navph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .box .navph img {
+    margin-right: 5px;
+  }
+  .container .box .navph p {
+    margin-right: 170px;
+  }
+  .container .box nav {
+    display: none;
+  }
+  .container .box .social {
+    display: none;
+  }
+  .container .box .form-box {
+    width: 400px;
+    left: 0;
+    top: 100px;
+  }
+  .container .box .form-box input {
+    width: 330px;
+    margin-left: 10px;
+  }
+  .container .box .form-box p {
+    margin-left: 20px;
+    width: 300px;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: normal;
+  }
+  .container .box .form-box button {
+    width: 330px;
+    height: 60px;
+    margin-left: 20px;
+  }
+  .container .box .form-box h1 {
+    padding: 20px;
+    position: absolute;
+    color: #3DE78B;
+    z-index: 2;
+    top: 660px;
+    left: 20px;
+    margin-bottom: 20px;
+  }
+  .container .box .form-box h1 p {
+    margin-left: -5px;
+    width: 350px;
+    font-size: 18px;
+  }
+  .container .box .vide-box {
+    background-image: url(../img/bg3.png);
+    background-size: 400px 1000px;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 0px;
+    top: 550px;
+    padding: 30px;
+  }
+  .container .box .vide-box span {
+    margin-bottom: 30px;
+  }
+  .container .box .vide-box span img {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+  }
+  .container .box .vide-box div {
+    margin: 0;
+  }
+  .container .box .vide-box div p {
+    margin-left: -50px;
+    margin-top: 30px;
+  }
+  .container .box .social-2 {
+    position: absolute;
+    top: 1050px;
+    left: 80px;
+  }
+  .container .box .social-2 a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 3;
+  }
+  .container .box .social-2 a img {
+    margin-right: 30px;
+  }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -300px;
+  background-color: #f8efeff1;
+  min-width: 300px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.699);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.699);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 20px 25px;
+  text-decoration: none;
+  display: block;
+  background-color: #FFFFFF;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
